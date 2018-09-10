@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<widget id="com.phonegap.ajaxtest" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+    
+    <!-- App Name -->
+    <name>Cordova Plugin Native Storage</name>
+    
+    <!-- App Description. This is only for Phonegap reference-->
+    <description>
+        A simple example app to demonstrate Cordova Native Storage Plugin
+    </description>
+    
+    <!-- Author Details -->
+    <author email="dev@cordova.apache.org" href="http://cordova.io">
+        Apache Cordova Team
+    </author>
+    
+    <!-- Default Page to load when app is opened -->
+    <content src="index.html" />
+    
+    <!-- Installed Cordova Plugins -->
+    <plugin name="cordova-plugin-whitelist" spec="1" />
+    <plugin name="cordova-plugin-nativestorage" spec="2.3.2" />
+    
+    <!-- Whitelist all links -->
+    <access origin="*" />
+    
+    <!-- Whitelist HTTP, HTTPS trafic, Telephone, SMS, Email & Geo links -->
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    
+    <!-- Whitelist Playstore for android -->
+    <platform name="android">
+        <allow-intent href="market:*" />
+    </platform>
+    
+<!--    <engine name="android" spec="~7.0.0" />-->
+</widget>
